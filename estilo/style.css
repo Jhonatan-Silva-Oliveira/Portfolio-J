@@ -6,14 +6,15 @@
   box-sizing: border-box;
 }
 body{
-  font-family: "Roboto"
+  font-family: "Roboto";
+  color: #F6FCFF;
 }
 .limit-container{
   width: 100%;
   max-width: 1160px;
-  display: flex;
 }
 header{
+  z-index: 5;
   position: fixed;
   background-color: rgba(41, 62, 71, .7);
   width: 100%;
@@ -23,6 +24,7 @@ header{
   justify-content: center;
 }
 header .header-content{
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -44,4 +46,76 @@ header .header-content{
   text-decoration: none;
   font-size: 18px;
   color: #E1F5FF;
+}
+
+main{
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-background{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgba(54, 68, 77, 0.5);
+}
+video{
+  z-index: -2;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.main-content{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-text{
+  margin-bottom: 100px;
+}
+.banner-text h2{
+  font-size: 32px;
+  font-weight: 400;
+}
+.banner-text h1{
+  font-size: 80px;
+  font-weight: 500;
+
+}
+.banner-text h1 span{
+  text-transform: uppercase;
+  color: #EFDB6F;
+}
+.banner-text p{
+  font-size: 32px;
+}
+.banner-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.banner-btn a{
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px 35px;
+  color: #3F370E;
+  background: linear-gradient(#EFDB6F,#8D8244) ;
+  border: 2px solid #EFDB6F;
+  border-radius: 5px;
+}
+.banner-btn a:first-of-type{
+  color: #EFDB6F;
+  background: transparent;
 }
