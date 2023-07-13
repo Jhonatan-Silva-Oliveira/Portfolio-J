@@ -1,54 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: "Roboto";
-  color: #F6FCFF;
+  color: #f6fcff;
 }
-.limit-container{
+.limit-container {
   width: 100%;
   max-width: 1160px;
 }
-header{
+header {
   z-index: 5;
   position: fixed;
-  background-color: rgba(41, 62, 71, .7);
+  background-color: rgba(41, 62, 71, 0.7);
   width: 100%;
   min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header .header-content{
+header .header-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.logo{
+.logo {
   width: 50px;
 }
-.logo img{
+.logo img {
   width: 100%;
 }
-.header-content nav{
+.header-content nav {
   width: 100%;
   max-width: 550px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.header-content nav a{
+.header-content nav a {
   text-decoration: none;
   font-size: 18px;
-  color: #E1F5FF;
+  color: #e1f5ff;
 }
 
-main{
+main {
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -56,7 +56,7 @@ main{
   justify-content: center;
   flex-direction: column;
 }
-.main-background{
+.main-background {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -65,57 +65,60 @@ main{
   z-index: -1;
   background-color: rgba(54, 68, 77, 0.5);
 }
-video{
+video {
   z-index: -2;
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
-.main-content{
+.main-content {
   position: absolute;
   top: 0;
   bottom: 0;
   z-index: 4;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.banner-text{
-  margin-bottom: 100px;
+.banner-text {
+  margin-bottom: 50px;
 }
-.banner-text h2{
-  font-size: 32px;
+.banner-text h2 {
+  font-size: 36px;
   font-weight: 400;
 }
-.banner-text h1{
-  font-size: 80px;
+.banner-text h1 {
+  font-size: 100px;
   font-weight: 500;
-
 }
-.banner-text h1 span{
+.banner-text h1 span {
   text-transform: uppercase;
-  color: #EFDB6F;
+  color: #efdb6f;
 }
-.banner-text p{
-  font-size: 32px;
+.banner-text p {
+  font-size: 36px;
 }
 .banner-btn {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 250px;
 }
-.banner-btn a{
+.banner-btn a {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.2rem;
   text-decoration: none;
-  padding: 20px 35px;
-  color: #3F370E;
-  background: linear-gradient(#EFDB6F,#8D8244) ;
-  border: 2px solid #EFDB6F;
+  padding: 20px 20px;
+  color: #3f370e;
+  background: linear-gradient(#efdb6f, #8d8244);
+  border: 2px solid #efdb6f;
   border-radius: 5px;
 }
-.banner-btn a:first-of-type{
-  color: #EFDB6F;
+.banner-btn a:first-of-type {
+  color: #efdb6f;
   background: transparent;
 }
