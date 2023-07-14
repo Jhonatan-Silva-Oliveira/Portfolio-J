@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 
 * {
   padding: 0;
@@ -105,20 +106,150 @@ video {
   justify-content: center;
   gap: 250px;
 }
-.banner-btn a {
+.btn {
   text-align: center;
   display: inline-block;
   width: 200px;
+  height: 70px;
   text-transform: uppercase;
   font-size: 1.2rem;
+  font-weight: 500;
   text-decoration: none;
-  padding: 20px 20px;
+  padding: 23px 20px;
   color: #3f370e;
   background: linear-gradient(#efdb6f, #8d8244);
   border: 2px solid #efdb6f;
   border-radius: 5px;
 }
-.banner-btn a:first-of-type {
+.banner-btn .btn:first-of-type {
   color: #efdb6f;
   background: transparent;
+}
+
+/* ----------------------------------------------- */
+/* about */
+
+.about-section {
+  background: #182126;
+  display: flex;
+  justify-content: center;
+}
+.titulo-secoes {
+  z-index: 0;
+  position: relative;
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 100px 0;
+}
+.titulo-secoes::before {
+  z-index: -1;
+  position: absolute;
+  color: #8d8244;
+  top: -40px;
+  left: 120px;
+  content: "Sobre Mim";
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+.about-content .foto-perfil {
+  max-width: 550px;
+  max-height: 600px;
+  padding: 15px;
+  border: 3px solid #8d8144;
+  border-radius: 5px;
+}
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #1a88b8;
+  border-radius: 5px;
+}
+.about-text {
+  max-width: 550px;
+}
+.about-text h5 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.about-text h4 {
+  text-transform: uppercase;
+  font-size: 34px;
+  color: #efdb6f;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.about-text p {
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  line-height: 1.3;
+  font-size: 18px;
+  color: #e1f5ff;
+  margin-bottom: 20px;
+}
+.about-text span {
+  font-weight: 700;
+}
+.about-text .nav-contato {
+  color: #efdb6f;
+  text-decoration: none;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #8d8144;
+}
+
+.about-text ul {
+  margin: 20px 0 40px 0;
+}
+.about-text ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.about-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-links .btn {
+  display: flex;
+  width: 220px;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-links .btn img {
+  width: 30px;
+}
+.links {
+  width: 150px;
+}
+.links p {
+  margin: 5px 0;
+  color: #8d8144;
+  font-weight: 500;
+  font-size: 16px;
+}
+.links .icons-links {
+  display: flex;
+  justify-content: space-between;
+}
+.links .icons-links a {
+  display: inline-block;
+}
+.links .icons-links a img {
+  width: 35px;
 }
