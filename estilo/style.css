@@ -262,9 +262,12 @@ video {
 /* resume */
 
 .resume-section {
+  overflow: hidden;
   padding: 120px 0;
   background: #2a3135;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .title-resume::before {
@@ -329,4 +332,33 @@ video {
 }
 .box-resume p {
   font-size: 18px;
+}
+
+.faixa-skills {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 110%;
+  height: 86px;
+  transform: rotate(-2deg);
+}
+.faixa-skills::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 86px;
+  background-color: #efdb6f;
+  transform: rotate(-2deg);
+}
+
+.list-skills {
+  z-index: 0;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
 }
