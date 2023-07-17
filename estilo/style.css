@@ -270,8 +270,10 @@ video {
 .title-resume::before {
   content: "Resumo";
 }
-.resume-content {
+.resume-container {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
 .subtitle {
   width: 400px;
@@ -281,37 +283,50 @@ video {
   text-transform: uppercase;
   font-weight: 400;
   line-height: 112px;
-  color: #094965;
+  color: #05415a;
 }
-
+.resume-content {
+  display: flex;
+}
 .line-diag {
   margin: 0 25px;
   width: 5px;
-  height: 400px;
+  height: 500px;
   background: #8d8144;
 }
 .line-horin {
   margin: 20px 0;
-  width: 550px;
+  width: 100%;
   height: 3px;
   background: #8d8144;
 }
 
 .resume-text {
-  width: 550px;
+  width: 580px;
 }
-.resume-text p:first-of-type {
+.resume-text p {
   font-size: 22px;
 }
-.resume-text h5 {
+.box-resume {
+  position: relative;
+}
+.box-resume::before {
+  content: attr(data-value);
+  position: absolute;
+  color: #8d8144;
+  left: -36%;
+  top: 10px;
+  font-size: 15px;
+}
+.box-resume h5 {
   font-size: 18px;
   font-weight: 600;
 }
-.resume-text h6 {
+.box-resume h6 {
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.resume-text p {
+.box-resume p {
   font-size: 18px;
 }
