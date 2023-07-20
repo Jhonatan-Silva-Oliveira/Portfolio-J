@@ -362,3 +362,118 @@ video {
   justify-content: space-around;
   align-items: center;
 }
+
+/* ----------------------------------------------- */
+/* portfolio */
+
+.portfolio-section {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, #00000000 0%, #021a24 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.background-top {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(25deg, #000 0%, #05415a 50%, #000 100%);
+}
+.background-bottom {
+  position: absolute;
+}
+.title-portfolio::before {
+  content: "Portfolio";
+}
+.portfolio-content {
+  display: flex;
+}
+.portfolio-figure {
+  width: calc(100% / 2);
+}
+.portfolio-figure .laptop {
+  position: relative;
+  width: 345px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.portfolio-figure .laptop img {
+  z-index: 1;
+  position: absolute;
+  width: 390px;
+  height: 480px;
+  top: 10px;
+  left: -50px;
+}
+.portfolio-figure .laptop::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  background-color: rgba(11, 45, 59, 0.308);
+  width: 340px;
+  height: 480px;
+}
+
+.portfolio-figure .laptop::after {
+  z-index: 3;
+  position: absolute;
+  content: "";
+  background-image: url(../assets/imagens/tabletfundo.png);
+  background-size: cover;
+  width: 500px;
+  height: 620px;
+  top: -60px;
+  left: -140px;
+}
+
+.portfolio-figure .smartp {
+  position: relative;
+  z-index: 100;
+  top: -305px;
+  left: 300px;
+  width: 137px;
+  height: 305px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.portfolio-figure .smartp img {
+  z-index: 1;
+  position: absolute;
+  width: 183px;
+  height: 305px;
+  left: -50px;
+  border-radius: 10px;
+}
+.portfolio-figure .smartp::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  background-color: rgba(11, 45, 59, 0.308);
+  width: 135px;
+  height: 305px;
+  border-radius: 10px;
+}
+
+.portfolio-figure .smartp::after {
+  z-index: 3;
+  position: absolute;
+  content: "";
+  background-image: url(../assets/imagens/smartphone.png);
+  background-size: cover;
+  width: 300px;
+  height: 350px;
+  top: -22.5px;
+  left: -108px;
+}
+.portfolio-card {
+  width: calc(100% / 2);
+}
