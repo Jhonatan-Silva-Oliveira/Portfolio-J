@@ -18,6 +18,7 @@ header {
   z-index: 5;
   position: fixed;
   background-color: rgba(41, 62, 71, 0.7);
+  backdrop-filter: blur(5px);
   width: 100%;
   min-height: 100px;
   display: flex;
@@ -111,7 +112,6 @@ video {
   display: inline-block;
   width: 200px;
   height: 70px;
-  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
@@ -120,6 +120,9 @@ video {
   background: linear-gradient(#efdb6f, #8d8244);
   border: 2px solid #efdb6f;
   border-radius: 5px;
+}
+.banner-btn .btn {
+  text-transform: uppercase;
 }
 .banner-btn .btn:first-of-type {
   color: #efdb6f;
@@ -212,7 +215,12 @@ video {
 .line {
   width: 100%;
   height: 3px;
-  background-color: #8d8144;
+  background-image: linear-gradient(
+    to right,
+    #8d814400 3%,
+    #8d8144 50%,
+    #8d814400 97%
+  );
 }
 
 .about-text ul {
@@ -230,6 +238,7 @@ video {
   align-items: center;
 }
 .about-links .btn {
+  text-transform: uppercase;
   display: flex;
   width: 220px;
   align-items: center;
@@ -296,12 +305,18 @@ video {
   width: 5px;
   height: 500px;
   background: #8d8144;
+  border-radius: 3px;
 }
 .line-horin {
   margin: 20px 0;
   width: 100%;
   height: 3px;
-  background: #8d8144;
+  background-image: linear-gradient(
+    to right,
+    #8d814400 3%,
+    #8d8144 50%,
+    #8d814400 97%
+  );
 }
 
 .resume-text {
@@ -387,32 +402,41 @@ video {
   background: rgb(0, 0, 0);
   background: linear-gradient(25deg, #000 0%, #05415a 50%, #000 100%);
 }
-.background-bottom {
-  position: absolute;
-}
 .title-portfolio::before {
   content: "Portfolio";
 }
 .portfolio-content {
   display: flex;
+  width: 100%;
+  height: 600px;
+  background-color: #1513292c;
+  border-radius: 10px;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(
+    to right,
+    #8d814400 10%,
+    #8d8144 50%,
+    #8d814400 90%
+  );
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px #15132941;
+  -moz-box-shadow: 0px 0px 5px 0px #15132941;
+  box-shadow: 0px 0px 5px 0px #15132941;
 }
 .portfolio-figure {
   width: calc(100% / 2);
 }
 .portfolio-figure .laptop {
   position: relative;
+  top: 50px;
+  left: 60px;
   width: 345px;
   height: 500px;
-  overflow: hidden;
   border-radius: 10px;
-}
-.portfolio-figure .laptop img {
-  z-index: 1;
-  position: absolute;
-  width: 390px;
-  height: 480px;
-  top: 10px;
-  left: -50px;
 }
 .portfolio-figure .laptop::before {
   z-index: 2;
@@ -434,23 +458,27 @@ video {
   top: -60px;
   left: -140px;
 }
+.portfolio-figure .laptop .corte-image-laptop {
+  position: relative;
+  overflow: hidden;
+  width: 340px;
+  height: 480px;
+  border-radius: 15px;
+}
+.portfolio-figure .laptop .corte-image-laptop img {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  left: -30px;
+}
 
 .portfolio-figure .smartp {
   position: relative;
-  z-index: 100;
-  top: -305px;
-  left: 300px;
+  z-index: 3;
+  top: -253px;
+  left: 380px;
   width: 137px;
   height: 305px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.portfolio-figure .smartp img {
-  z-index: 1;
-  position: absolute;
-  width: 183px;
-  height: 305px;
-  left: -50px;
   border-radius: 10px;
 }
 .portfolio-figure .smartp::before {
@@ -474,6 +502,60 @@ video {
   top: -22.5px;
   left: -108px;
 }
+.portfolio-figure .smartp .corte-image-smartp {
+  position: relative;
+  overflow: hidden;
+  width: 130px;
+  height: 300px;
+  border-radius: 10px;
+}
+.portfolio-figure .smartp .corte-image-smartp img {
+  position: absolute;
+  width: 250px;
+  height: 400px;
+  left: -70px;
+}
 .portfolio-card {
+  border-radius: 10px;
+  background: #8d8144;
+  background: linear-gradient(#8d8144 0%, #8d814400 100%);
   width: calc(100% / 2);
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-card-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.portfolio-card-text h4 {
+  font-size: 34px;
+}
+.portfolio-card-text p {
+  font-size: 18px;
+}
+.portfolio-card-video {
+  margin: 5px 0;
+  width: 100%;
+  height: 250px;
+  background: red;
+}
+.portfolio-card-video video {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-container-btn {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio-container-btn .btn {
+  display: flex;
+  width: 190px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
