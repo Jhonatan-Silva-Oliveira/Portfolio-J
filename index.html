@@ -11,19 +11,21 @@
     <header>
       <div class="limit-container header-content">
         <div class="logo">
-          <img src="./assets/J..svg" alt="logo" />
+          <a href="./" class="logo-link">
+            <img src="./assets/J..svg" alt="logo" />
+          </a>
         </div>
         <nav>
-          <a href="#">Inicio</a>
-          <a href="#">Sobre</a>
-          <a href="#">Resumo</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contato</a>
+          <a href="#home">Inicio</a>
+          <a href="#about">Sobre</a>
+          <a href="#resume">Resumo</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contato</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="home">
       <div class="main-background"></div>
       <video
         src="./assets/digitando no pc.mp4"
@@ -39,8 +41,8 @@
           <p>E sou um Desenvolvedor Front-end</p>
         </div>
         <div class="banner-btn">
-          <a href="#" class="btn">Meus Projetos</a>
-          <a href="#" class="btn">Contate me</a>
+          <a href="#portfolio" class="btn">Meus Projetos</a>
+          <a href="#contact" class="btn">Contate me</a>
         </div>
       </div>
     </main>
@@ -48,7 +50,7 @@
     <!-- ----------------------------------------------- -->
     <!-- about -->
 
-    <section class="about-section">
+    <section id="about" class="about-section">
       <div class="limit-container">
         <h3 class="title-secoes title-about">Sobre Mim</h3>
         <div class="about-content">
@@ -66,7 +68,7 @@
               detalhe, desempenho e código limpo, pretendo dar meus próximos
               passos nas tecnologias TypeScript e Redux. <br />
               Se você se interessou e quer me conhecer mais entre em
-              <a class="nav-contato" href="#">contato</a>
+              <a class="nav-contato" href="#contact">contato</a>
               estou ansioso pelo próximo projeto a ser criado.
             </p>
             <div class="line"></div>
@@ -78,24 +80,33 @@
               <li>Wats: +55 011 93208-5745</li>
             </ul>
             <div class="about-links">
-              <a href="#" class="btn"
+              <a
+                href="./assets/cv/currículoDevJhonatan .pdf"
+                class="btn"
+                target="_blank"
                 >DOWNLOAD CV
-                <img src="./assets/icons/baixar.svg" alt="icon-baixar"
+                <img src="./assets/icons/baixar.svg" alt="icon-baixar" download
               /></a>
               <div class="links">
                 <p>Siga-me:</p>
                 <div class="icons-links">
-                  <a href="#"
+                  <a
+                    href="https://www.linkedin.com/in/jhonatan-silva-oliveira/"
+                    target="_blank"
                     ><img
                       src="./assets/icons/linkedin.svg"
                       alt="link-externo-linkedin"
                   /></a>
-                  <a href="#"
+                  <a
+                    href="https://www.instagram.com/xxjhow777xx/"
+                    target="_blank"
                     ><img
                       src="./assets/icons/instagran.svg"
                       alt="link-externo-instagran"
                   /></a>
-                  <a href="#"
+                  <a
+                    href="https://www.facebook.com/jhonatan.silvaoliveira.98/"
+                    target="_blank"
                     ><img
                       src="./assets/icons/facebook.svg"
                       alt="link-externo-facebook"
@@ -111,7 +122,7 @@
     <!-- ----------------------------------------------- -->
     <!-- resume -->
 
-    <section class="resume-section">
+    <section id="resume" class="resume-section">
       <div class="limit-container">
         <h3 class="title-secoes title-resume">Resumo</h3>
         <div class="resume-container">
@@ -215,7 +226,7 @@
     <!-- ----------------------------------------------- -->
     <!-- portfolio -->
 
-    <section class="portfolio-section">
+    <section id="portfolio" class="portfolio-section">
       <div class="background-top"></div>
       <div class="limit-container">
         <h3 class="title-secoes title-portfolio">Portfolio</h3>
@@ -277,7 +288,7 @@
     <!-- ----------------------------------------------- -->
     <!-- contato -->
 
-    <section class="contato-section">
+    <section id="contact" class="contato-section">
       <div class="background-princ"></div>
       <div class="limit-container">
         <h3 class="title-secoes title-contato">Contatos</h3>
@@ -356,17 +367,21 @@
             <div class="contato-card contato-links">
               <p>Siga-me em minhas redes socias:</p>
               <div class="icons-links">
-                <a href="#"
+                <a
+                  href="https://www.linkedin.com/in/jhonatan-silva-oliveira/"
+                  target="_blank"
                   ><img
                     src="./assets/icons/linkedin.svg"
                     alt="link-externo-linkedin"
                 /></a>
-                <a href="#"
+                <a href="https://www.instagram.com/xxjhow777xx/" target="_blank"
                   ><img
                     src="./assets/icons/instagran.svg"
                     alt="link-externo-instagran"
                 /></a>
-                <a href="#"
+                <a
+                  href="https://www.facebook.com/jhonatan.silvaoliveira.98/"
+                  target="_blank"
                   ><img
                     src="./assets/icons/facebook.svg"
                     alt="link-externo-facebook"
@@ -377,5 +392,17 @@
         </div>
       </div>
     </section>
+
+    <!-- ----------------------------------------------- -->
+    <!-- footer -->
+
+    <footer>
+      <div class="limit-container footer-content">
+        <div class="logo">
+          <img src="./assets/J..svg" alt="logo" />
+        </div>
+        <p>© 2023 JHONATAN. ALL RIGHTS RESERVED</p>
+      </div>
+    </footer>
   </body>
 </html>
