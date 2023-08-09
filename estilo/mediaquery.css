@@ -158,13 +158,13 @@
     content: attr(data-value);
     backdrop-filter: blur(5px);
     position: absolute;
-    width: 145px;
+    width: 115px;
     height: 18px;
     color: #8d8144;
     background-color: transparent;
-    left: -40%;
+    left: -165px;
     top: 10px;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .portfolio-content {
@@ -211,6 +211,7 @@
     margin: 0 auto;
   }
   .subtitle h6 {
+    line-height: 100px;
     font-size: 70px;
     letter-spacing: 5px;
     writing-mode: vertical-rl;
@@ -222,5 +223,285 @@
 
 /* ---------------------------------------------- */
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 700px) {
+  .limit-container {
+    padding: 0 10px;
+  }
+  .banner-text {
+    margin-bottom: 100px;
+  }
+  .banner-text h2 {
+    font-size: 16px;
+  }
+  .banner-text h1 {
+    font-size: 36px;
+  }
+  .banner-text p {
+    font-size: 16px;
+  }
+  .banner-btn {
+    gap: 15%;
+  }
+  .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+
+  .about-section {
+    padding: 100px 0;
+  }
+  .title-secoes {
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-shadow: 45px -15px 0px #8d8244;
+  }
+  .about-content .foto-perfil {
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+  }
+  .about-text .div1 h5 {
+    font-size: 16px;
+  }
+  .about-text .div1 h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .about-text .div1 p {
+    font-size: 15px;
+  }
+  .about-text ul li {
+    font-size: 15px;
+  }
+  .about-links .btn {
+    width: 175px;
+  }
+  .about-links .btn img {
+    width: 20px;
+  }
+  .links {
+    width: 120px;
+  }
+  .links p {
+    font-size: 14px;
+  }
+  .links .icons-links a img {
+    width: 25px;
+  }
+
+  .resume-section {
+    padding: 100px 0;
+  }
+  .subtitle {
+    margin: 0;
+    width: 50px;
+  }
+  .subtitle h6 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .line-diag {
+    margin: 0 15px;
+    height: 100%;
+  }
+  .line-horin {
+    margin: 10px 0;
+  }
+  .box-resume::before {
+    width: 5px;
+    height: 5px;
+    left: -40px;
+  }
+  .box-resume:hover::before {
+    width: 50px;
+    left: -80px;
+    font-size: 10px;
+  }
+  .resume-text {
+    width: 100%;
+  }
+  .resume-text p {
+    font-size: 16px;
+  }
+  .box-resume h5 {
+    font-size: 15px;
+  }
+  .box-resume h6 {
+    font-size: 12px;
+  }
+  .box-resume p {
+    font-size: 15px;
+  }
+  .faixa-skills {
+    height: 60px;
+  }
+  .faixa-skills::before {
+    height: 60px;
+  }
+  .faixa-skills::after {
+    height: 60px;
+  }
+
+  .skill {
+    width: 40px;
+  }
+  .skill-acert {
+    width: 48px;
+  }
+  .skill img {
+    width: 100%;
+  }
+
+  .portfolio-section {
+    padding: 100px 0;
+  }
+  .portfolio-content {
+    height: 500px;
+  }
+  .portfolio-figure .laptop {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+  }
+  .portfolio-figure .laptop::before {
+    width: 270px;
+    height: 380px;
+  }
+
+  .portfolio-figure .laptop::after {
+    width: 400px;
+    height: 500px;
+    top: -50px;
+    left: -115px;
+  }
+  .portfolio-figure .laptop .corte-image-laptop {
+    width: 270px;
+    height: 480px;
+  }
+  .portfolio-figure .laptop .corte-image-laptop img {
+    width: 300px;
+    height: 380px;
+    left: -20px;
+  }
+  .portfolio-figure .smartp {
+    top: -13%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 205px;
+  }
+  .portfolio-figure .smartp::before {
+    width: 95px;
+    height: 215px;
+  }
+
+  .portfolio-figure .smartp::after {
+    width: 200px;
+    height: 250px;
+    top: -16px;
+    left: -78px;
+  }
+  .portfolio-figure .smartp .corte-image-smartp {
+    width: 95px;
+    height: 215px;
+  }
+  .portfolio-figure .smartp .corte-image-smartp img {
+    width: 200px;
+    height: 400px;
+    left: -70px;
+  }
+
+  .contato-section {
+    padding: 100px 0;
+  }
+  .contato-paragraph {
+    font-size: 20px;
+  }
+  .contato-content form {
+    padding: 15px 10px;
+  }
+  .contato-div-flex {
+    flex-direction: column;
+    gap: 0;
+  }
+  .contato-form-div {
+    margin-bottom: 12px;
+  }
+  .contato-form-div input,
+  .contato-form-div textarea {
+    font-size: 15px;
+    height: 40px;
+  }
+  .contato-form-div input::placeholder,
+  .contato-form-div textarea::placeholder {
+    font-size: 15px;
+  }
+  .contato-form-div textarea {
+    height: 100px;
+  }
+  .contato-form-btn .btn {
+    cursor: pointer;
+    font-weight: 600;
+    width: 170px;
+  }
+  .contato-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background: #82d3f517;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .contato-box-text p {
+    font-size: 14px;
+  }
+  .contato-box-text p:last-of-type {
+    font-size: 16px;
+  }
+  .contato-box-img img {
+    width: 35px;
+  }
+  /* .links {
+    width: 120px;
+  } */
+  .contato-links p {
+    font-size: 15px;
+  }
+  .contato-links .icons-links a img {
+    width: 25px;
+  }
+  .contato-links .icons-links {
+    width: 120px;
+  }
+  footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer-content .logo {
+    display: none;
+  }
+  footer .footer-content p {
+    font-size: 16px;
+  }
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 500px) {
+  .banner-text h1 {
+    font-size: 27px;
+  }
+  .skill {
+    width: 35px;
+  }
+  .skill-acert {
+    width: 40px;
+  }
 }
