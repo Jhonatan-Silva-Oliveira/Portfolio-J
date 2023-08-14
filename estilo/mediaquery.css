@@ -192,7 +192,7 @@
     width: 100%;
   }
   .contato-links {
-    margin-top: 50px;
+    margin-top: 0;
   }
   .contato-form-btn .btn {
     width: 200px;
@@ -227,17 +227,51 @@
   .limit-container {
     padding: 0 10px;
   }
+  header {
+    position: fixed;
+    bottom: 0;
+    min-height: 80px;
+    -webkit-box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.31);
+  }
+  .logo {
+    display: none;
+  }
+  .logo-mobile {
+    width: 45px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .header-content nav .content-link a span {
+    display: none;
+  }
+  .header-content nav .content-link a .img-link-mobile {
+    display: block;
+    font-size: 30px;
+    height: 30px;
+    color: #8d8144;
+  }
+  .header-content nav .content-link a .img-link-mobile:hover {
+    color: #efdb6f;
+    transition: all 0.5s;
+  }
+  .main-background {
+    background-color: rgba(39, 42, 46, 0.747);
+  }
   .banner-text {
     margin-bottom: 100px;
   }
   .banner-text h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .banner-text h1 {
-    font-size: 36px;
+    font-size: 40px;
   }
   .banner-text p {
-    font-size: 16px;
+    font-size: 18px;
   }
   .banner-btn {
     gap: 15%;
@@ -287,8 +321,8 @@
   .links p {
     font-size: 14px;
   }
-  .links .icons-links a img {
-    width: 25px;
+  .links .icons-links a i {
+    font-size: 30px;
   }
 
   .resume-section {
@@ -312,7 +346,7 @@
   .box-resume::before {
     width: 5px;
     height: 5px;
-    left: -40px;
+    left: -36px;
   }
   .box-resume:hover::before {
     width: 50px;
@@ -388,8 +422,8 @@
     left: -20px;
   }
   .portfolio-figure .smartp {
-    top: -13%;
-    left: 78%;
+    top: -12.7%;
+    left: 72%;
     transform: translate(-50%, -50%);
     width: 100px;
     height: 205px;
@@ -441,7 +475,7 @@
     font-size: 15px;
   }
   .contato-form-div textarea {
-    height: 100px;
+    height: 105px;
   }
   .contato-form-btn .btn {
     cursor: pointer;
@@ -449,12 +483,7 @@
     width: 170px;
   }
   .contato-card {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 15px 10px;
-    background: #82d3f517;
     margin-bottom: 10px;
     border-radius: 5px;
   }
@@ -467,19 +496,29 @@
   .contato-box-img img {
     width: 35px;
   }
-  /* .links {
-    width: 120px;
-  } */
+  .contato-links {
+    margin-top: 15px;
+  }
   .contato-links p {
     font-size: 15px;
   }
-  .contato-links .icons-links a img {
-    width: 25px;
+  .contato-links .icons-links a i {
+    font-size: 30px;
+    color: #8bbcd2;
   }
   .contato-links .icons-links {
     width: 120px;
   }
+  footer {
+    background-color: rgb(13, 21, 26);
+    width: 100%;
+    min-height: 155px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
   footer .footer-content {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -494,14 +533,43 @@
 
 /* ---------------------------------------------- */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
   .banner-text h1 {
-    font-size: 27px;
+    font-size: 32px;
   }
   .skill {
     width: 35px;
   }
   .skill-acert {
     width: 40px;
+  }
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 430px) {
+  .banner-text h1 {
+    font-size: 27px;
+  }
+  .portfolio-figure .laptop {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+  }
+  .portfolio-figure .smartp {
+    left: 80%;
+  }
+}
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 380px) {
+  .portfolio-figure .laptop {
+    left: 55%;
+  }
+  .portfolio-figure .smartp {
+    left: 76%;
   }
 }

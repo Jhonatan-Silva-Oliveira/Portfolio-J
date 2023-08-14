@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jhonatan Silva</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
 
     <link rel="stylesheet" href="./estilo/style.css" />
     <link rel="stylesheet" href="./estilo/mediaquery.css" />
@@ -17,11 +21,35 @@
           </a>
         </div>
         <nav>
-          <a href="#home">Inicio</a>
-          <a href="#about">Sobre</a>
-          <a href="#resume">Resumo</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contato</a>
+          <div class="content-link">
+            <a href="./" class="logo-link">
+              <i class="bx bx-home-alt img-link-mobile"></i>
+              <span>Inicio</span></a
+            >
+          </div>
+          <div class="content-link">
+            <a href="#about" class="link-mobile"
+              ><i class="bx bx-user img-link-mobile"></i><span>Sobre</span></a
+            >
+          </div>
+          <div class="content-link">
+            <a href="#resume" class="link-mobile"
+              ><i class="bx bx-book-bookmark img-link-mobile"></i
+              ><span>Resumo</span></a
+            >
+          </div>
+          <div class="content-link">
+            <a href="#portfolio" class="link-mobile"
+              ><i class="bx bx-briefcase-alt-2 img-link-mobile"></i
+              ><span>Portfolio</span></a
+            >
+          </div>
+          <div class="content-link">
+            <a href="#contact" class="link-mobile"
+              ><i class="bx bx-message-detail img-link-mobile"></i
+              ><span>Contato</span></a
+            >
+          </div>
         </nav>
       </div>
     </header>
@@ -35,6 +63,11 @@
         muted
         loop
       ></video>
+      <div class="logo logo-mobile">
+        <a href="./" class="logo-link">
+          <img src="./assets/J..svg" alt="logo" />
+        </a>
+      </div>
       <div class="limit-container main-content">
         <div class="banner-text">
           <h2>Bem Vindo!</h2>
@@ -96,24 +129,21 @@
                   <a
                     href="https://www.linkedin.com/in/jhonatan-silva-oliveira/"
                     target="_blank"
-                    ><img
-                      src="./assets/icons/linkedin.svg"
-                      alt="link-externo-linkedin"
-                  /></a>
+                    rel="noreferrer noopener"
+                    ><i class="bx bxl-linkedin-square"></i
+                  ></a>
                   <a
                     href="https://www.instagram.com/xxjhow777xx/"
                     target="_blank"
-                    ><img
-                      src="./assets/icons/instagran.svg"
-                      alt="link-externo-instagran"
-                  /></a>
+                    rel="noreferrer noopener"
+                    ><i class="bx bxl-github"></i
+                  ></a>
                   <a
                     href="https://www.facebook.com/jhonatan.silvaoliveira.98/"
                     target="_blank"
-                    ><img
-                      src="./assets/icons/facebook.svg"
-                      alt="link-externo-facebook"
-                  /></a>
+                    rel="noreferrer noopener"
+                    ><i class="bx bxl-instagram-alt"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -299,7 +329,7 @@
         <p class="contato-paragraph">Entrar em contato</p>
 
         <div class="contato-content">
-          <form id="contact">
+          <form id="contact-form">
             <div class="contato-div-flex">
               <div class="contato-form-div">
                 <input
@@ -344,7 +374,7 @@
             </div>
 
             <div class="contato-form-btn">
-              <button form="contact" class="btn">Enviar Mensagem</button>
+              <button form="contact-form" class="btn">Enviar Mensagem</button>
             </div>
           </form>
 
@@ -373,22 +403,21 @@
                 <a
                   href="https://www.linkedin.com/in/jhonatan-silva-oliveira/"
                   target="_blank"
-                  ><img
-                    src="./assets/icons/linkedin.svg"
-                    alt="link-externo-linkedin"
-                /></a>
-                <a href="https://www.instagram.com/xxjhow777xx/" target="_blank"
-                  ><img
-                    src="./assets/icons/instagran.svg"
-                    alt="link-externo-instagran"
-                /></a>
+                  rel="noreferrer noopener"
+                  ><i class="bx bxl-linkedin-square"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/xxjhow777xx/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><i class="bx bxl-github"></i
+                ></a>
                 <a
                   href="https://www.facebook.com/jhonatan.silvaoliveira.98/"
                   target="_blank"
-                  ><img
-                    src="./assets/icons/facebook.svg"
-                    alt="link-externo-facebook"
-                /></a>
+                  rel="noreferrer noopener"
+                  ><i class="bx bxl-instagram-alt"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -402,7 +431,9 @@
     <footer>
       <div class="limit-container footer-content">
         <div class="logo">
-          <img src="./assets/J..svg" alt="logo" />
+          <a href="./" class="logo-link">
+            <img src="./assets/J..svg" alt="logo" />
+          </a>
         </div>
         <p>© 2023 JHONATAN. ALL RIGHTS RESERVED</p>
       </div>
