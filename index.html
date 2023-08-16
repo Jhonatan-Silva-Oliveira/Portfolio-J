@@ -284,27 +284,45 @@
             </div>
           </div>
 
-          <div class="portfolio-card">
+          <div
+            id="contain-portfolio-card"
+            class="portfolio-card portfolio-card-hide"
+          >
             <div class="portfolio-card-text">
-              <h4>Projeto 1</h4>
-              <p>react/javascript</p>
+              <div>
+                <div class="contain-title-btn">
+                  <h4>Projeto 1</h4>
+                  <div class="contain-btns-portfolio-card">
+                    <button id="open-modal">
+                      <i class="bx bxs-up-arrow"></i></button
+                    ><button id="close-modal" class="btn-2 hide">
+                      <i class="bx bxs-down-arrow"></i>
+                    </button>
+                  </div>
+                </div>
+                <p><span>react</span> <span>javascript</span></p>
+              </div>
+            </div>
+            <div id="contain-portfolio" class="contain-portfolio-text hide">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Placeat quibusdam eaque maiores libero voluptate quasi
-                temporibus ullam, totam praesentium, delectus magnam asperiores
-                ducimus similique vel, natus molestias est sit!
+                temporibus ullam,eaque maiores libero voluptate quasi temporibus
+                ullam,
               </p>
             </div>
-            <div class="portfolio-card-video">
-              <video
-                src="./assets/digitando no pc.mp4"
-                type="video/mp4"
-                autoplay
-                muted
-                loop
-              ></video>
+            <div id="contain-video" class="hide">
+              <div class="portfolio-card-video">
+                <video
+                  src="./assets/digitando no pc.mp4"
+                  type="video/mp4"
+                  autoplay
+                  muted
+                  loop
+                ></video>
+              </div>
             </div>
-            <div class="portfolio-container-btn">
+            <div id="contain-btns" class="portfolio-container-btn hide">
               <a href="#" class="btn"
                 >Preview <img src="./assets/icons/link.svg" alt="icon-preview"
               /></a>
@@ -438,5 +456,7 @@
         <p>© 2023 JHONATAN. ALL RIGHTS RESERVED</p>
       </div>
     </footer>
+
+    <script src="./js/portfolio-toggle/script.js"></script>
   </body>
 </html>

@@ -101,10 +101,17 @@
     height: 350px;
     left: -70px;
   }
-  .portfolio-card-text h4 {
+  .portfolio-card {
+    height: 577px;
+  }
+
+  .portfolio-card-text .contain-title-btn h4 {
     font-size: 30px;
   }
-  .portfolio-card-text p {
+  .portfolio-card-text div p {
+    font-size: 16px;
+  }
+  .contain-portfolio-text p {
     font-size: 16px;
   }
 
@@ -169,12 +176,58 @@
 
   .portfolio-content {
     max-width: 500px;
+    position: relative;
+    overflow: hidden;
   }
   .portfolio-figure {
     width: 100%;
   }
   .portfolio-card {
-    display: none;
+    z-index: 100;
+    background: linear-gradient(#8d8144 40%, #8d814400 100%);
+    /* bottom: 0; */
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .portfolio-card-hide {
+    height: 130px;
+    overflow: hidden;
+  }
+  .portfolio-card-text .contain-title-btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .contain-btns-portfolio-card {
+    display: block;
+    position: relative;
+    width: 30px;
+  }
+  .contain-btns-portfolio-card button {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #8d8144;
+    border: none;
+    color: #58512b;
+  }
+  .contain-btns-portfolio-card button:hover {
+    color: #fded82;
+  }
+  .contain-btns-portfolio-card .btn-2 {
+    z-index: 2;
+  }
+  .contain-btns-portfolio-card button i {
+    font-size: 20px;
+  }
+
+  .hide {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .contato-paragraph {
@@ -394,6 +447,36 @@
   .portfolio-content {
     height: 500px;
   }
+  .portfolio-card {
+    height: 497px;
+  }
+  .portfolio-card-hide {
+    height: 120px;
+  }
+  .portfolio-card .portfolio-card-text .contain-title-btn h4 {
+    font-size: 22px;
+  }
+  .portfolio-card-text div p {
+    font-size: 15px;
+  }
+  .contain-portfolio-text p {
+    font-size: 15px;
+  }
+  .portfolio-container-btn {
+    gap: 20px;
+    padding: 15px 20px 20px 20px;
+  }
+  .portfolio-container-btn .btn {
+    width: 175px;
+  }
+  .portfolio-card-text {
+    padding: 20px 20px 10px 20px;
+  }
+  .portfolio-card-video {
+    margin: 10px 0;
+    width: 100%;
+    height: 220px;
+  }
   .portfolio-figure .laptop {
     top: 50%;
     left: 50%;
@@ -504,7 +587,6 @@
   }
   .contato-links .icons-links a i {
     font-size: 30px;
-    color: #8bbcd2;
   }
   .contato-links .icons-links {
     width: 120px;
@@ -542,6 +624,11 @@
   }
   .skill-acert {
     width: 40px;
+  }
+  .portfolio-card-video {
+    margin: 10px 0;
+    width: 100%;
+    height: 180px;
   }
 }
 
