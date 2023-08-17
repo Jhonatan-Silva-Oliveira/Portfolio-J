@@ -124,11 +124,12 @@
 
 @media screen and (max-width: 1000px) {
   header {
-    min-height: 130px;
+    min-height: 110px;
   }
   header .header-content {
     flex-direction: column;
     gap: 15px;
+    padding: 0 20px;
   }
   .banner-text h2 {
     font-size: 30px;
@@ -184,7 +185,7 @@
   }
   .portfolio-card {
     z-index: 100;
-    background: linear-gradient(#8d8144 40%, #8d814400 100%);
+    background: linear-gradient(#8d8144 50%, #8d814400 100%);
     /* bottom: 0; */
 
     width: 100%;
@@ -302,12 +303,13 @@
     display: none;
   }
   .header-content nav .content-link a .img-link-mobile {
+    pointer-events: none;
     display: block;
     font-size: 30px;
     height: 30px;
     color: #8d8144;
   }
-  .header-content nav .content-link a .img-link-mobile:hover {
+  .header-content nav .content-link a:hover {
     color: #efdb6f;
     transition: all 0.5s;
   }
@@ -337,7 +339,7 @@
   }
 
   .about-section {
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .title-secoes {
     font-size: 50px;
@@ -379,7 +381,7 @@
   }
 
   .resume-section {
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .subtitle {
     margin: 0;
@@ -442,7 +444,7 @@
   }
 
   .portfolio-section {
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .portfolio-content {
     height: 500px;
@@ -533,7 +535,7 @@
   }
 
   .contato-section {
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .contato-paragraph {
     font-size: 20px;

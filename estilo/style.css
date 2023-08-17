@@ -60,19 +60,20 @@ header .header-content {
 }
 .header-content nav .content-link a {
   text-decoration: none;
-}
-.header-content nav .content-link a span {
   font-size: 18px;
   color: #e1f5ff;
   border-bottom: 2px solid transparent;
+  display: block;
+}
+.header-content nav .content-link a:hover {
+  color: #efdb6f;
+  border-bottom: 2px solid #efdb6f;
+}
+.header-content nav .content-link a span {
+  pointer-events: none;
 }
 .header-content nav .content-link a .img-link-mobile {
   display: none;
-}
-.header-content nav .content-link a span:hover {
-  color: #efdb6f;
-  border-bottom: 2px solid #efdb6f;
-  transition: all 0.5s;
 }
 
 main {
