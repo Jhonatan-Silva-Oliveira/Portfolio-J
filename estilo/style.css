@@ -64,10 +64,17 @@ header .header-content {
   color: #e1f5ff;
   border-bottom: 2px solid transparent;
   display: block;
+  border-radius: 3px;
+  /* overflow: hidden; */
 }
 .header-content nav .content-link a:hover {
   color: #efdb6f;
+  border-bottom: 2px solid #beaf56;
+}
+.header-content nav .content-link .active {
+  color: #efdb6f;
   border-bottom: 2px solid #efdb6f;
+  background-image: transparent;
 }
 .header-content nav .content-link a span {
   pointer-events: none;

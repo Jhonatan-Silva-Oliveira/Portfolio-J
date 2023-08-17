@@ -299,6 +299,16 @@
     top: 10px;
     left: 10px;
   }
+  /* .header-content nav .content-link {
+    
+  } */
+  .header-content nav .content-link a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .header-content nav .content-link a span {
     display: none;
   }
@@ -309,10 +319,17 @@
     height: 30px;
     color: #8d8144;
   }
-  .header-content nav .content-link a:hover {
+  .header-content nav .content-link .active {
+    color: #bbac5a;
+    border-bottom: 2px solid #beaf56;
+    background-image: linear-gradient(#ffef96, #f1da55);
+  }
+  /* .header-content nav .content-link a:hover {
     color: #efdb6f;
     transition: all 0.5s;
-  }
+    background-color: #f1e4a0;
+    border-radius: 3px;
+  } */
   .main-background {
     background-color: rgba(39, 42, 46, 0.747);
   }
