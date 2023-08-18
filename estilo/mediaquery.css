@@ -123,6 +123,9 @@
 /* ---------------------------------------------- */
 
 @media screen and (max-width: 1000px) {
+  .limit-container {
+    width: 90%;
+  }
   header {
     min-height: 110px;
   }
@@ -255,7 +258,7 @@
 
 /* ---------------------------------------------- */
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 920px) {
   .banner-text h1 {
     font-size: 52px;
   }
@@ -277,7 +280,7 @@
 
 /* ---------------------------------------------- */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 790px) {
   .limit-container {
     padding: 0 10px;
   }
@@ -334,7 +337,8 @@
     background-color: rgba(39, 42, 46, 0.747);
   }
   .banner-text {
-    margin-bottom: 100px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
   .banner-text h2 {
     font-size: 18px;
@@ -488,9 +492,6 @@
   .portfolio-container-btn .btn {
     width: 175px;
   }
-  .portfolio-card-text {
-    padding: 20px 20px 10px 20px;
-  }
   .portfolio-card-video {
     margin: 10px 0;
     width: 100%;
@@ -634,7 +635,13 @@
 
 /* ---------------------------------------------- */
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 570px) {
+  .limit-container {
+    width: 100%;
+  }
+  .banner-text {
+    margin-bottom: 50px;
+  }
   .banner-text h1 {
     font-size: 32px;
   }
