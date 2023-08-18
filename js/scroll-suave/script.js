@@ -1,5 +1,6 @@
 const links = document.querySelectorAll('.menu a');
-const btnLinks = document.querySelectorAll('.banner-btn a')
+const btnLinks = document.querySelectorAll('.banner-btn a');
+const aboutLinkContato = document.querySelectorAll('.nav-contato');
 
 links.forEach(link =>
 {
@@ -7,6 +8,11 @@ links.forEach(link =>
 });
 
 btnLinks.forEach(link =>
+{
+  link.addEventListener('click', scrollToSection);
+});
+
+aboutLinkContato.forEach(link =>
 {
   link.addEventListener('click', scrollToSection);
 });
