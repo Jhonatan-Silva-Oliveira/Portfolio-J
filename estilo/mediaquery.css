@@ -116,6 +116,7 @@
   }
 
   .contato-content form {
+    height: 455px;
     margin-right: 20px;
   }
 }
@@ -251,7 +252,7 @@
   .contato-links {
     margin-top: 0;
   }
-  .contato-form-btn .btn {
+  .contato-form-btn1 {
     width: 200px;
   }
 }
@@ -560,27 +561,21 @@
   }
   .contato-content form {
     padding: 15px 10px;
+    height: 325px;
   }
-  .contato-div-flex {
-    flex-direction: column;
-    gap: 0;
-  }
-  .contato-form-div {
-    margin-bottom: 12px;
-  }
-  .contato-form-div input,
-  .contato-form-div textarea {
+  .contato-form-input {
     font-size: 15px;
     height: 40px;
+    margin-bottom: 12px;
   }
-  .contato-form-div input::placeholder,
-  .contato-form-div textarea::placeholder {
+  .contato-form-input::placeholder {
     font-size: 15px;
   }
-  .contato-form-div textarea {
+  .contato-form-textarea {
     height: 105px;
+    margin-bottom: 30px;
   }
-  .contato-form-btn .btn {
+  .contato-form-btn1 {
     cursor: pointer;
     font-weight: 600;
     width: 170px;

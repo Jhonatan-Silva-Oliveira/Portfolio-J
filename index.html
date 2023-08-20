@@ -505,52 +505,48 @@
         <p class="contato-paragraph">Entrar em contato</p>
 
         <div class="contato-content">
-          <form id="contact-form">
-            <div class="contato-div-flex">
-              <div class="contato-form-div">
-                <input
-                  type="text"
-                  name="name"
-                  class="contato-form-input"
-                  placeholder="Nome*"
-                  required
-                />
-              </div>
-
-              <div class="contato-form-div">
-                <input
-                  type="email"
-                  name="email"
-                  class="contato-form-input"
-                  placeholder="Email*"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="contato-form-div">
-              <input
-                type="text"
-                name="about"
-                class="contato-form-input"
-                placeholder="Assunto*"
-                required
-              />
-            </div>
-
-            <div class="contato-form-div contato-form-div-textarea">
-              <textarea
-                name="message"
-                class="contato-form-input contato-form-area"
-                cols="30"
-                rows="10"
-                placeholder="Mensagem*"
-                required
-              ></textarea>
-            </div>
-
-            <div class="contato-form-btn">
-              <button form="contact-form" class="btn">Enviar Mensagem</button>
+          <form
+            id="contact-form"
+            action="https://formsubmit.co/jhonatan.silva777@outlook.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="http://192.168.56.1:5501/Portfolio-J/send-message/thanks.html"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nova Mensagem - Portfolio Jhonatan"
+            />
+            <input
+              type="text"
+              name="name"
+              class="contato-form-input"
+              placeholder="Nome*"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="contato-form-input"
+              placeholder="Email*"
+              required
+            />
+            <textarea
+              name="message"
+              class="contato-form-input contato-form-textarea"
+              cols="30"
+              rows="10"
+              placeholder="Mensagem*"
+              required
+            ></textarea>
+            <div class="contato-box-btn">
+              <button class="btn contato-form-btn1" type="submit">
+                Enviar Mensagem
+              </button>
             </div>
           </form>
 
@@ -627,11 +623,6 @@
     <!-- scroll suave da navegação -->
 
     <script src="./js/scroll-suave/script.js"></script>
-
-    <!-- ----------------------------------------------- -->
-    <!-- toggle da seção portfolio -->
-
-    <!-- <script src="./js/portfolio-toggle/script.js"></script> -->
 
     <!-- ----------------------------------------------- -->
     <!-- toggle da seção portfolio -->

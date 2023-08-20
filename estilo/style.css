@@ -670,20 +670,14 @@ video {
 }
 .contato-content form {
   width: 600px;
+  /* height: 455px; */
   padding: 20px;
   background: #82d3f517;
   border-radius: 5px;
+  position: relative;
 }
-.contato-div-flex {
-  display: flex;
-  gap: 30px;
-}
-.contato-form-div {
-  width: 100%;
+.contato-form-input {
   margin-bottom: 20px;
-}
-.contato-form-div input,
-.contato-form-div textarea {
   padding: 5px;
   font-family: "Roboto";
   font-weight: 400;
@@ -696,34 +690,31 @@ video {
   border: none;
   border-bottom: 3px solid #6e98aa;
 }
-.contato-form-div input::placeholder,
-.contato-form-div textarea::placeholder {
+.contato-form-input::placeholder {
   font-family: "Roboto";
   font-weight: 500;
   color: #6e98aa;
   font-size: 18px;
 }
-.contato-form-div input:focus,
-.contato-form-div textarea:focus {
+.contato-form-input:focus {
   outline: none;
   border-radius: 5px;
   border: 3px solid #efdc6fb6;
   transition: all 0s;
 }
-.contato-form-div textarea {
+.contato-form-textarea {
   height: 150px;
   resize: none;
-}
-.contato-form-div-textarea {
   margin-bottom: 50px;
 }
-.contato-form-btn {
-  margin-top: 30px;
+.contato-box-btn {
+  display: inline-block;
 }
-.contato-form-btn .btn {
+.contato-form-btn1 {
   cursor: pointer;
   font-weight: 600;
   width: 210px;
+  /* margin-top: 30px; */
 }
 .contatos-outros {
   width: 500px;
